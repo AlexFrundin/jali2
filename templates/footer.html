@@ -1,0 +1,73 @@
+<footer class="footer" id="footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 mt-3">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27364.21216542423!2d41.04248180810469!3d30.983692719207372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU5JzAxLjMiTiA0McKwMDEnMjkuOSJF!5e0!3m2!1sar!2s!4v1461174045077"  frameborder="0" style="border:0; width:100%; height:330px;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+          <div class="row">
+
+            <!-- <div class="text-white"> -->
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <h5 class="text-center">روابط اضافية</h5>
+                <div class="links revers">
+                  <ul class="text-right">
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#advantages">تعرف علينا</a></li>
+                    <li  class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="#form">الانظمة بالمملكة</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page "><a href="#description">هدفنا</a></li>
+                    <li  class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="{% url 'news' %}">اخبار القضاء</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="{% url 'usluga' 1 %}">رسالتنا</a></li>
+                    <li  class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="{% url 'page' 'jobs' %}">سوابق قضائية</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="{% url 'page' 'info' %}">رؤيتنا</a></li>
+                    <!-- <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://nasserlaw.org/?page_id=841">رأى قضائى</a></li>
+                    <li  class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="http://nasserlaw.org/?cat=61">خدماتنا</a></li>
+                    <li  class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://nasserlaw.org/?post_type=gallery">صور ارشيفية</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://nasserlaw.org/?page_id=489">التوظيف</a></li>
+                    <li  class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="http://nasserlaw.org/?cat=67">اخبارنا</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://nasserlaw.org/?page_id=333">اتصل بنا</a></li> -->
+                  </ul>
+               </div>
+              </div>
+            <!-- </div> -->
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+              <!-- <div class="text-white"> -->
+                <h5>عنوان الروابط</h5>
+                <ul class="contact_main">
+                  <li class="add">التعاون، الدائري الشمالي ، حي، الرياض 12477<i class="fa fa-map-marker"></i></li>
+                  <li style="font-family:Verdana, Geneva, sans-serif;"> +966 50 011 1171 <i class="fa fa-phone"></i></li>
+                  <li style="font-family:Verdana, Geneva, sans-serif;"> 123 456 7890 <i class="fa fa-mobile"></i></li>
+                  <!-- <li style="font-family:Verdana, Geneva, sans-serif;"><i class="fa fa-fax"></i> 0146610202</li> -->
+                  <li style="font-family:Verdana, Geneva, sans-serif;">At Taawun, الدائري الشمالي ، حي، Riyadh 12477, Саудовская Аравия<i class="fa fa-inbox"></i> </li>
+                  <li style="font-family:Verdana, Geneva, sans-serif">  mail@mail.com  <i class="fa fa-envelope"></i></li>
+                  <li style="font-family:Verdana, Geneva, sans-serif">  saudialaw.com  <i class="fa fa-home"></i> </li>
+                </ul>
+              <!-- </div> -->
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<section id="copy" class="py-4 bg-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+                      {{ mp_9.item_1}}
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          {{ mp_9.item_2}}
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          {{ mp_9.item_3}}
+        </div>
+      </div>
+    </div>
+</section>

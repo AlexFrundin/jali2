@@ -1,0 +1,6 @@
+/__pycache__/
+/DELETE/
+*.pyc
+*.sqlite3
+*.docx
+*.7z
