@@ -36,10 +36,10 @@ ul,ol{
 ::-moz-placeholder { /* Firefox 19+ */
     color: #dddddd;
 }
-:-ms-input-placeholder { /* IE 10+ */
+::-ms-input-placeholder { /* IE 10+ */
     color: #dddddd;
 }
-:-moz-placeholder { /* Firefox 18- */
+::-moz-placeholder { /* Firefox 18- */
     color: #dddddd;
 }
 ul.contact_main {
@@ -469,6 +469,7 @@ footer .address{
 }
 
 .to-top {
+    /* z-index: 2; */
     position: fixed;
     bottom: 30px;
     right: 10px;

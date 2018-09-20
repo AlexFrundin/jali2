@@ -16,6 +16,7 @@
 
 
 {% include 'home.html' %}
+
 <br><br><br>
 
 <div class="container">
@@ -27,8 +28,9 @@
         <h1>{{ i.title }}</h1>
       <div class="card-body">
         <p>{{ i.short_desc }}</p>
-        <button class="btn btn-news"><a href="/news/{{ i.id }}">شاهد أكثر</a></button>
-
+        <button type="button" class="btn btn-news" onClick='location.href="/news/{{ i.id }}"'>
+        شاهد أكثر
+        </button>
       </div>
         <img class="card-img-bottom" src="{{ i.image.url }}" alt="...">
     </div>
