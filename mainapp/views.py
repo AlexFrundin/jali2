@@ -17,7 +17,7 @@ def mainpage(request):
     args['mp_6'] = Form_section.objects.all()
     args['mp_7'] = Scroll_menu_text.objects.all()
     args['mp_8'] = Review.objects.all()
-    args['mp_8f'] = Review.objects.get(id=1)
+    args['mp_8f'] = Review.objects.get(id=2)
     args['mp_8a'] = Review.objects.all()[1:]
     args['mp_9'] = Bottom_footer.objects.get(id=1)
     slider = Slider2.objects.all()
