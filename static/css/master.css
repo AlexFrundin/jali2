@@ -398,8 +398,9 @@ footer{
 footer h5 {
 	margin: 0;
 	margin-bottom: 5px;
+  text-align: center;
 	height: 40px;
-	  color: #C68C07;
+	color: #C68C07;
 	font-size: 17px;
 	font-weight: bold;
 	position: relative;/* border-bottom: 1px solid; */
