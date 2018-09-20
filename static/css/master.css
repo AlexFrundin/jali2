@@ -9,6 +9,11 @@ body{
     /* direction: rtl; */
 }
 
+.news-box{
+  position: relative;
+  margin-bottom: 10%;
+}
+
 .footer-text{
   font-size: 1.2rem;
 }

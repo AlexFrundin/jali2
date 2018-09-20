@@ -13,40 +13,26 @@
 
 </head>
 <body>
-<section id="home">
-		<div class="menu bg-white position-fixed w-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-6 text-center text-md-left">
-						<div class="logo">
-                            <a href="/"><img src="{% static 'img/logo.png' %}"></a>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 d-none d-md-flex flex-row justify-content-center align-items-center justify-content-md-end align-items-md-center ">
-						<img src="{% static 'img/call.png' %}" class="phone-icon">
-						<div class="phone-number">
-						   8-800-500-555 <br>
-						   8-800-500-555
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</section>
+
+
+{% include 'home.html' %}
 <br><br><br>
+
 <div class="container">
 <div class="row">
 {% for i in news %}
-    <div class="col-md-4">
-        <div class="news-box">
-            <img src="{{ i.image.url }}" >
-            <p1>{{ i.date }}</p1>
-            <h1>{{ i.title }}</h1>
-            <img src="/wp-content/news-line.png">
-            <p>{{ i.short_desc }}</p>
-            <a href="/news/{{ i.id }}">شاهد أكثر</a>
-        </div>
+  <div class="col-md-4 mt-5">
+    <div class="card">
+        <p1>{{ i.date }}</p1>
+        <h1>{{ i.title }}</h1>
+      <div class="card-body">
+        <p>{{ i.short_desc }}</p>
+        <button class="btn btn-primary"><a href="/news/{{ i.id }}">شاهد أكثر</a></button>
+
+      </div>
+        <img class="card-img-bottom" src="{{ i.image.url }}" alt="...">
     </div>
+  </div>
 {% endfor %}
 
 </div>
