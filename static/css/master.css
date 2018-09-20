@@ -66,6 +66,7 @@ ul.contact_main li i {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:1rem;
   margin-bottom: 10%;
+  margin-top:10%;
 }
 .first{
  margin-right: 16%;
@@ -266,10 +267,10 @@ h1.title.line{
     font-weight: bold;
 }
 #advantages .news-block img{
-    max-width: 400px;
+    max-width: 300px;
 }
 #advantages .news{
-    height: 450px;
+    height: 350px;
     background: #E3C68A;
     padding: 35px 0 50px;
 }
