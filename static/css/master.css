@@ -46,7 +46,7 @@ ul.contact_main {
   text-align: right;
 	margin:0px;
 	padding:0px;
-	slist-style:none;
+	list-style:none;
 	font-size:13px;
 	color: #979797;
 }
@@ -393,7 +393,7 @@ footer{
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 footer h5 {
 	margin: 0;
