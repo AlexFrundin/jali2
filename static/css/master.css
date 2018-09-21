@@ -117,18 +117,26 @@ font-size: 1rem;
       }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
+  .first{
+   margin-right:23%;
+   font-size: 2rem;
+  }
   .second{
-  margin-right: 16%;
+  margin-right: 40%;
   font-size: 1rem;
   }
   .third{
-    margin-right: 62%;
+    margin-right: 99%;
     font-size: 0.8rem;
   }
    }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 813px) {
+  .first{
+    margin-left: 7%;
+     font-size: 1.8rem;
+  }
      .second{
        margin-right: 45%;
        font-size: 1rem;
@@ -138,6 +146,58 @@ font-size: 1rem;
     margin-right: 88%;
     padding-right: 100%;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .first{
+    margin-left: 8%;
+     font-size: 1.8rem;
+  }
+     .second{
+       margin-right: 40%;
+       font-size: 1rem;
+            }
+  .third{
+    /* text-align: left  !important; */
+    margin-right: 0%;
+  padding-right: 71%;
+  font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 668px) {
+  .first{
+    margin-left: 11%;
+     font-size: 1.8rem;
+  }
+     .second{
+       margin-right: 45%;
+       font-size: 1rem;
+            }
+  .third{
+    /* text-align: left  !important; */
+    margin-right: 0%;
+  padding-right: 79%;
+  font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .first{
+    margin-left: 11%;
+     font-size: 1.8rem;
+  }
+     .second{
+       margin-right: 45%;
+       font-size: 1rem;
+            }
+  .third{
+    /* text-align: left  !important; */
+    margin-right: 0%;
+  padding-right: 89%;
+  font-size: 0.8rem;
   }
 }
 
