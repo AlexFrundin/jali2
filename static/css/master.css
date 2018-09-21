@@ -74,17 +74,74 @@ ul.contact_main li i {
   margin-top:10%;
 }
 .first{
- margin-right: 16%;
+ margin-right:0.4em;
  font-size: 2rem;
 }
 .second{
-margin-right: 42%;
+margin-right: 45%;
 font-size: 1rem;
 }
 .third{
-  margin-left: 11%;
+  margin-right: 11%;
   font-size: 0.8rem;
 }
+
+@media screen and (max-width: 1960px) {
+  .first{
+   margin-right:14%;
+   font-size: 2rem;
+  }
+  .second{
+  margin-right: 26%;
+  font-size: 1rem;
+  }
+  .third{
+    margin-right: 72%;
+    font-size: 0.8rem;
+  }
+   }
+
+   @media screen and (max-width: 1640px) {
+     .first{
+      margin-right:36%;
+      font-size: 2rem;
+     }
+     .second{
+     margin-right: 43%;
+     font-size: 1rem;
+     }
+     .third{
+       margin-right: 80%;
+       font-size: 0.8rem;
+     }
+      }
+
+
+@media screen and (max-width: 1024px) {
+  .second{
+  margin-right: 16%;
+  font-size: 1rem;
+  }
+  .third{
+    margin-right: 62%;
+    font-size: 0.8rem;
+  }
+   }
+
+@media screen and (max-width: 767px) {
+     .second{
+       margin-right: 45%;
+       font-size: 1rem;
+            }
+  .third{
+    /* text-align: left  !important; */
+    margin-right: 88%;
+    padding-right: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+
 #home .text-arabic{
   padding-top: 1em;
   display: flex;
