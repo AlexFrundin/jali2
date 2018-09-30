@@ -42,6 +42,11 @@ def usluga(request, id):
     args['all'] = Services.objects.all()
     return render(request, "usluga.html", args)
 
+def contact(request):
+    args = {}
+    args['mp_9'] = Bottom_footer.objects.get(id=1)
+    return render(request, 'contact.html', args)
+
 
 def news(request):
     args = {}

@@ -9,6 +9,7 @@ urlpatterns = [
     path('news', views.news, name='news'),
     path('service/<int:id>', views.usluga, name='usluga'),
     path('p/<str:link>', views.page, name='page'),
+    path('contact', views.contact, name='contact')
     #url(r'list', views.list, name='list'),
     #url(r'copy', views.copy, name='copy'),
 ]
