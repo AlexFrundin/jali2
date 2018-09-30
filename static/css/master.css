@@ -142,7 +142,7 @@ ul.contact_main li i {
   margin-bottom: 10%;
   margin-top:10%;
 }
-.first{
+/* .first{
  margin-right:0.4em;
  font-size: 2rem;
 }
@@ -153,7 +153,22 @@ font-size: 1rem;
 .third{
   margin-right: 11%;
   font-size: 0.8rem;
-}
+} */
+
+@media screen and (max-width: 6343px) {
+  .first{
+   margin-right:14%;
+   font-size: 2rem;
+  }
+  .second{
+  margin-right: 26%;
+  font-size: 1rem;
+  }
+  .third{
+    margin-right: 52%;
+    font-size: 0.8rem;
+  }
+   }
 
 @media screen and (max-width: 1960px) {
   .first{
@@ -165,7 +180,7 @@ font-size: 1rem;
   font-size: 1rem;
   }
   .third{
-    margin-right: 72%;
+    margin-right: 52%;
     font-size: 0.8rem;
   }
    }
@@ -185,7 +200,6 @@ font-size: 1rem;
      }
       }
 
-
 @media screen and (max-width: 1025px) {
   .first{
    margin-right:23%;
@@ -200,7 +214,6 @@ font-size: 1rem;
     font-size: 0.8rem;
   }
    }
-
 @media screen and (max-width: 813px) {
   .first{
     margin-left: 7%;
@@ -269,7 +282,6 @@ font-size: 1rem;
   font-size: 0.8rem;
   }
 }
-
 
 #home .text-arabic{
   padding-top: 1em;
