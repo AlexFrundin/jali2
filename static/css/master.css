@@ -639,12 +639,13 @@ footer h5 {
 	font-weight: bold;
 	position: relative;/* border-bottom: 1px solid; */
 }
-@media (max-width: 361px) {
-footer{
 
+@media screen and (max-width: 480px) {
+footer{
+  background-image: url(../img/footer_p.png) no-repeat;
   background-position:center;
   background-size:cover;
-  height: 880px;
+  height: 800px;
 }
 
 }
