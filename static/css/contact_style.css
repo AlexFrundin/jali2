@@ -67,7 +67,10 @@
 }
 @media screen and (max-width: 480px) {
 .text_my_input{
-  min-height:24px;
+  min-height:32px;
+}
+.text_my_input_first{
+  min-height:32px;
 }
 .text_col{
   min-height: 86px;
