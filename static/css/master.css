@@ -619,6 +619,7 @@ h1.title.line{
 }
 
 footer{
+
     background-image: url(../img/footer_p.png);
     background-position: center;
     background-size:cover;
@@ -638,12 +639,16 @@ footer h5 {
 	font-weight: bold;
 	position: relative;/* border-bottom: 1px solid; */
 }
-@media (max-width: 992px) {
-fototer{
-background-size:contain;
+@media (max-width: 361px) {
+footer{
+
+  background-position:center;
+  background-size:cover;
+  height: 880px;
 }
+
 }
-}
+
 .revers{
   direction: rtl;
 }
@@ -715,7 +720,7 @@ footer .address{
 }
 .links ul li {
     margin: 0px 0px 6px;
-    float: right;
+    float: left;
     width: 90%;
 }
 .links ul li + li {
@@ -730,6 +735,7 @@ footer .address{
 	overflow:hidden;
 }
 .links ul li a:before {
+
 	font-family: FontAwesome;
 	display: inline-block;
 	content: "\f067";
