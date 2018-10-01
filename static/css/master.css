@@ -67,7 +67,7 @@ body{
   direction: rtl;
   text-align:right;
   color: #3a3c41;
-  
+
 }
 .contact_side ul.contact_main li .fa {
   color: #322323;
@@ -741,7 +741,7 @@ footer .address{
 	font-family: FontAwesome;
 	display: inline-block;
 	content: "\f067";
-	margin-left: 10px;
+	margin-left: 7px;
 	margin-right: 0;
 }
 .links ul li a:hover {
