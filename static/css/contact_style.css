@@ -33,9 +33,11 @@
 .text_col {
 	/* overflow: auto; */
   margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 	vertical-align: center;
 	width: 100%;
-	max-width: 95%;
+	max-width: 93%;
 	min-height: 156px;
 	position: relative;
 	resize: none;
@@ -62,4 +64,12 @@
 .form_my_button:hover{
     background: #202020;
     color: #fff;
+}
+@media screen and (max-width: 480px) {
+.text_my_input{
+
+}
+.text_col{
+  min-height: 86px;
+}
 }
