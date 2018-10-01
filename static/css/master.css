@@ -64,8 +64,8 @@ body{
   height: 20px;
   line-height: 20px;
   overflow: hidden;
-  direction: ltr;
-  text-align:left;
+  direction: rtl;
+  text-align:right;
   color: #3a3c41;
 }
 .contact_side ul.contact_main li .fa {
@@ -651,7 +651,7 @@ footer{
 }
 
 .revers{
-  direction: rtl;
+  direction:rtl !important;
 }
 .footer_top {
 	padding:5% 0 7%;
@@ -748,8 +748,7 @@ footer .address{
 	padding: 0px 3px 0px 0px;
 }
 ul.contact_main {
-  text-align: left;
-  direction: rtl;
+  text-align: right;
 	margin:0px;
 	padding:0px;
 	list-style:none;
