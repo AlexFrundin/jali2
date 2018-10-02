@@ -2,12 +2,13 @@
         <br>
   <h4 class="sub-title text-center pb-0">نص العنوان الفرعي</h4>
   <h1 class="title text-center pt-2 mb-5 font-weight-bold">نص العنوان</h1>
+
   <form method="post" action="{% url 'process' %}">
     {% csrf_token %}
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4">
         <div class="form-group">
-          <input type="text" class="form-control" name="Your-name" placeholder="الاسم" aria-required="true" aria-invalid="false" style="text-align: right;">
+          <input type="text" class="form-control" name="NameClient" placeholder="الاسم" aria-required="true" aria-invalid="false" style="text-align: right;">
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4">

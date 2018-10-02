@@ -142,6 +142,8 @@ class Review(models.Model):
     text_2 = models.TextField('Text 2')
     author_name = models.CharField('Author name', max_length=128)
     author_img = models.ImageField("Author img 120x120")
+
+
 class Bottom_footer(models.Model):
 
     class Meta:
@@ -155,6 +157,8 @@ class Bottom_footer(models.Model):
     item_1 = models.CharField('#1 item', max_length=128)
     item_2 = models.CharField('#2 item', max_length=128)
     item_3 = models.CharField('#3 item', max_length=128)
+
+
 class News(models.Model):
 
     class Meta:
@@ -171,6 +175,8 @@ class News(models.Model):
     full_desc = models.TextField('Short description')
     image = models.ImageField('News image')
     on_main_page = models.BooleanField("On main page?", default=False)
+
+
 class Page(models.Model):
 
     class Meta:
@@ -184,6 +190,8 @@ class Page(models.Model):
     title = models.CharField('News title', max_length=128)
     link = models.CharField('Link name', max_length=128)
     full_desc = models.TextField('Short description')
+
+
 class Slider2(models.Model):
 
     class Meta:

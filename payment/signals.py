@@ -13,6 +13,8 @@ def PaymentNotification(sender, **kwargs):
     ipn_obj = sender
     if ipn_obj.payment_status == ST_PP_COMPLETED:
         order = get_object_or_404(Consultation, id=ipn_obj.invoice)
+        print("********************SIGNALS***********************************")
+        print(order)
         order.is_paid = True
         order.save()
 
