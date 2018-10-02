@@ -31,7 +31,7 @@ def PaymentProcess(request):
             'amount': '1',
             'item_name': 'Consultations',
             "invoice": str(args['id']),
-            'currency_code': 'USA',
+            'currency_code': 'USD',
             'notify_url': 'http://{}{}'.format(host, reverse('paypal-ipn')),
             'return_url': 'http://{}{}'.format(host, reverse('done')),
             'cancel_return': 'http://{}{}'.format(host, reverse('canceled'))
