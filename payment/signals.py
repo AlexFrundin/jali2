@@ -5,8 +5,8 @@ from mainapp.models import Consultation
 from django.conf import settings
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
-from io import BytesIO
-import weasyprint
+# from io import BytesIO
+# import weasyprint
 
 
 def PaymentNotification(sender, **kwargs):
