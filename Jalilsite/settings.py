@@ -15,6 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainapp.apps.MainappConfig',
+    'payment.apps.PaymentConfig',
     'paypal.standard.ipn',
 ]
 
@@ -100,5 +101,5 @@ MEDIA_DIRS = (
 
 #paypall
 #...
-PAYPAL_RECEIVER_EMAIL = 'zzevr.pro@gmail.com'
+PAYPAL_RECEIVER_EMAIL = 'aleksey.frundin@gmail.com'
 PAYPAL_TEST = True

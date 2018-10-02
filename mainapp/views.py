@@ -27,14 +27,7 @@ def mainpage(request):
     news = News.objects.all()
     args['newsf'] = news[0]
     args['newsa'] = News.objects.all()[1:]
-
     return render(request, "mainpage.html", args)
-
-
-def copy(request):
-    args = {}
-    return render(request, "mainpage2.html", args)
-
 
 def usluga(request, id):
     args = {}
@@ -47,13 +40,11 @@ def contact(request):
     args['mp_9'] = Bottom_footer.objects.get(id=1)
     return render(request, 'contact.html', args)
 
-
 def news(request):
     args = {}
     args['mp_9'] = Bottom_footer.objects.get(id=1)
     args['news'] = News.objects.all()
     return render(request, "news-all.html", args)
-
 
 def snews(request, id):
     args = {}
@@ -66,29 +57,29 @@ def page(request, link):
     args['news'] = Page.objects.get(link=link)
     return render(request, "page.html", args)
 
-def addconsultation(request):
-    name = request.POST.get('Your-name')
-    phone = request.POST.get('Phone')
-    category = request.POST.get('Dropdown')
-    msg =  request.POST.get('Your-message')
-    gg = Consultation(name=name, phone = phone, category = category, text = msg)
-    gg.save()
-    args = {}
-    args['id'] = gg.id
-    paypal_dict = {
-        "business": "zzevr.pro-facilitator@gmail.com",
-        "amount": "69",
-        "item_name": "Consultations",
-        "invoice": "%s" %args['id'],
-        "notify_url": "http://lawyer.pythonanywhere.com" + reverse('paypal-ipn'),
-        "return_url": "http://lawyer.pythonanywhere.com",
-        "cancel_return": "http://lawyer.pythonanywhere.com",
-        "custom": args['id'],
-    }
-    # Create the instance.
-    form = PayPalPaymentsForm(initial=paypal_dict)
-    args["form"]= form
-    return render(request,'pay.html', args)
+# def addconsultation(request):
+#     name = request.POST.get('Your-name')
+#     phone = request.POST.get('Phone')
+#     category = request.POST.get('Dropdown')
+#     msg =  request.POST.get('Your-message')
+#     gg = Consultation(name=name, phone = phone, category = category, text = msg)
+#     gg.save()
+#     args = {}
+#     args['id'] = gg.id
+#     paypal_dict = {
+#         "business": "aleksey.frundin@gmail.com",
+#         "amount": "69",
+#         "item_name": "Consultations",
+#         "invoice": f"{args['id']}",
+#         "notify_url": "http://206.189.222.174:12453" + reverse('paypal-ipn'),
+#         "return_url": "http://206.189.222.174:12453",
+#         "cancel_return": "http://206.189.222.174:12453",
+#         "custom": args['id'],
+#     }
+#     # Create the instance.
+#     form = PayPalPaymentsForm(initial=paypal_dict)
+#     args["form"]= form
+#     return render(request,'pay.html', args)
 
 def list(request):
     #if request.user.is_admin == False:
@@ -107,3 +98,6 @@ def list(request):
     return render(request, 'list.html', args)
     # else:
     #     redirect('/admin')
+def copy(request):
+    args = {}
+    return render(request, "mainpage2.html", args)

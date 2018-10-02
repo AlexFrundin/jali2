@@ -7,6 +7,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('paypal/', include('paypal.standard.ipn.urls')),
+    path('payment/', include('payment.urls')),
     path('', include('mainapp.urls'))
 ]
 if settings.DEBUG:

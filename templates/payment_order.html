@@ -1,0 +1,37 @@
+<div class="container">
+        <br>
+  <h4 class="sub-title text-center pb-0">نص العنوان الفرعي</h4>
+  <h1 class="title text-center pt-2 mb-5 font-weight-bold">نص العنوان</h1>
+  <form method="post" action="{% url 'process' %}">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" name="Your-name" placeholder="الاسم" aria-required="true" aria-invalid="false" style="text-align: right;">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" name="Phone" aria-required="true" aria-invalid="false" style="text-align: right;"placeholder="الهاتف">
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="form-group">
+          <select class="form-control text-right" dir="rtl" name="Dropdown">
+            {% for i in mp_6 %}
+                  <option value="{{ i.s_name }}">{{ i.s_name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <textarea name="Your-message" rows="5" class="form-control" id="message" aria-required="true" aria-invalid="false" style="text-align: right;"placeholder="نص الاستشارة المكتوبة"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-yellow mt-4">ارسال الطلب →</button>
+    </div>
+  </form>
+</div>
