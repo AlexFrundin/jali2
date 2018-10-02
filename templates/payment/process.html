@@ -32,6 +32,7 @@
             لمواصلة الدفع 60$</p>
                     <br>
                     <form action="" method="post" class="form" >
+                      {%csrf_token%}
                         {{ form.render }}
                     </form>
                     <br><br><br>
@@ -49,6 +50,10 @@
 <script src="{% static 'js/main.js'%}" type="text/javascript"></script>
 <style>
 
+
+input{
+
+}
 .pay-bg{
     background-color: rgba(255, 255, 255, 0.55);
 }
