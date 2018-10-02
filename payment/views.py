@@ -23,7 +23,7 @@ def PaymentProcess(request):
     paypal_dict = {
         'business': settings.PAYPAL_RECEIVER_EMAIL,
         'amount': '1',
-        'item_name': f'Consultations {name}',
+        'item_name': 'Consultations',
         "invoice": f"{args['id']}",
         'currency_code': 'USA',
         'notify_url': 'http://{}{}'.format(host, reverse('paypal-ipn')),
