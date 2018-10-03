@@ -1,5 +1,6 @@
 /__pycache__/
 /DELETE/
+/migrations/
 *.pyc
 *.sqlite3
 *.docx
