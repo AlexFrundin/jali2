@@ -12,6 +12,7 @@ class Consultation(models.Model):
     phone = models.CharField(max_length=64)
     category = models.CharField(max_length=64)
     text = models.TextField()
+
     is_paid = models.BooleanField(default=False)
     def __str__(self):
         return self.phone
@@ -115,15 +116,14 @@ class Services_section(models.Model):
 class Form_section(models.Model):
 
     class Meta:
-        verbose_name = 'Form section'
-        verbose_name_plural = 'Form sections'
+        verbose_name = 'ConsultationOrder'
+        verbose_name_plural = '6.ConsultationOrders'
 
     def __str__(self):
         return self.s_name
-        # return "%s" % self.code
 
     s_name = models.CharField('Name of the sections', max_length=128)
-
+    price = models.IntegerField(default=50)
 
 class Scroll_menu_text(models.Model):
 

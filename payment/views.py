@@ -20,15 +20,15 @@ def PaymentProcess(request):
         print(name, phone, category, msg)
         args = {}
         args['id'] = gg.id
+        amount = Form_section.objects.get(s_name=category).price
         host = request.get_host()
-        print(gg.id)
         print('http://{}{}'.format(host, reverse('paypal-ipn')))
         print('http://{}{}'.format(host, reverse('done')))
         print('http://{}{}'.format(host, reverse('canceled')))
 
         paypal_dict = {
             'business': settings.PAYPAL_RECEIVER_EMAIL,
-            'amount': '1',
+            'amount': amount,
             'item_name': 'Consultations',
             "invoice": str(args['id']),
             'currency_code': 'USD',

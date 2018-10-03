@@ -24,12 +24,16 @@ class ReviewAdmin(admin.ModelAdmin):
     list_display = ('title','author_name','get_prev')
     list_display_links = ('title',)
 
+@admin.register(Form_section)
+class ConsultationOrderAdmin(admin.ModelAdmin):
+    list_display = ('s_name', 'price')
+    list_display_links = ('s_name',)
+    list_editable = ('price',)
 
 admin.site.register(MpHeadBlock1)
 admin.site.register(MpHead)
 admin.site.register(Ticker)
 admin.site.register(Services_section)
-admin.site.register(Form_section)
 admin.site.register(Scroll_menu_text)
 admin.site.register(Bottom_footer)
 admin.site.register(Page)
