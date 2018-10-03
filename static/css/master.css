@@ -655,7 +655,7 @@ footer{
   direction:rtl !important;
 }
 .footer_top {
-	padding:5% 0 7%;
+	padding:3% 0 3%;
 }
 footer:after{
     content: '';
