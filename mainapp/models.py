@@ -1,8 +1,12 @@
 from django.db import models
+from django.utils.safestring import mark_safe
 # Create your models here.
 
 
 class Consultation(models.Model):
+    class Meta:
+        verbose_name = '1.Consultation'
+        verbose_name_plural = '1.Consultations'
 
     name = models.CharField(max_length=128)
     phone = models.CharField(max_length=64)
@@ -70,8 +74,8 @@ class Ticker(models.Model):
 class Services(models.Model):
 
     class Meta:
-        verbose_name = 'Service'
-        verbose_name_plural = 'Services`'
+        verbose_name = '2.Service'
+        verbose_name_plural = '2.Services`'
 
     def __str__(self):
         return self.s_title
@@ -84,6 +88,14 @@ class Services(models.Model):
     mp_icon = models.ImageField('Icon for Mainpage')
     sp_icon = models.FileField('Icon for Service page')
 
+    def get_prev_icon(self):
+        return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.mp_icon.url))
+
+    def get_prev_sp_icon(self):
+        return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.sp_icon.url))
+
+    get_prev_sp_icon.short_description = u'SP_Icon'
+    get_prev_icon.short_description = u'Icon'
 
 class Services_section(models.Model):
 
@@ -130,8 +142,8 @@ class Scroll_menu_text(models.Model):
 class Review(models.Model):
 
     class Meta:
-        verbose_name = 'Review'
-        verbose_name_plural = 'Reviews on the main page'
+        verbose_name = '3.Review'
+        verbose_name_plural = '3.Reviews on the main page'
 
     def __str__(self):
         return self.title
@@ -142,6 +154,11 @@ class Review(models.Model):
     text_2 = models.TextField('Text 2')
     author_name = models.CharField('Author name', max_length=128)
     author_img = models.ImageField("Author img 120x120")
+
+    def get_prev(self):
+        return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.author_img.url))
+
+    get_prev.short_description = "Image"
 
 
 class Bottom_footer(models.Model):
@@ -162,8 +179,8 @@ class Bottom_footer(models.Model):
 class News(models.Model):
 
     class Meta:
-        verbose_name = 'News'
-        verbose_name_plural = 'News'
+        verbose_name = '4.News'
+        verbose_name_plural = '4.News'
 
     def __str__(self):
         return self.title
@@ -176,12 +193,17 @@ class News(models.Model):
     image = models.ImageField('News image')
     on_main_page = models.BooleanField("On main page?", default=False)
 
+    def get_prev(self):
+        return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.image.url))
+
+    get_prev.short_description = u'Image'
+
 
 class Page(models.Model):
 
     class Meta:
-        verbose_name = 'Page'
-        verbose_name_plural = 'Pages'
+        verbose_name = '5.Page'
+        verbose_name_plural = '5.Pages'
 
     def __str__(self):
         return self.title
