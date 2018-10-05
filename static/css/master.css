@@ -84,6 +84,17 @@ body{
   margin-bottom: 10%;
 }
 
+.footer_img {
+    background-image:url(../img/email.png);
+    width:30px;
+    height:30px;
+    margin-bottom: -4px;
+    display:inline-block;
+    vertical-align:baseline;
+    margin-right: 0.65rem;
+    /* padding-left: 25px; */
+}
+
 .footer-text{
   font-size: 1.2rem;
 }

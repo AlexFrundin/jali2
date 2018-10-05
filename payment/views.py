@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404
-from decimal import Decimal
+# from django.shortcuts import render, get_object_or_404
+# from decimal import Decimal
 from django.conf import settings
 from django.urls import reverse
 from mainapp.models import *
@@ -17,14 +17,13 @@ def PaymentProcess(request):
 
         gg = Consultation( name=name, phone = phone, category = category, text = msg)
         gg.save()
-        print(name, phone, category, msg)
+
+
         args = {}
         args['id'] = gg.id
         amount = Form_section.objects.get(s_name=category).price
         host = request.get_host()
-        print('http://{}{}'.format(host, reverse('paypal-ipn')))
-        print('http://{}{}'.format(host, reverse('done')))
-        print('http://{}{}'.format(host, reverse('canceled')))
+
 
         paypal_dict = {
             'business': settings.PAYPAL_RECEIVER_EMAIL,

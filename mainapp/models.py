@@ -73,22 +73,16 @@ class Ticker(models.Model):
 
 
 class Services(models.Model):
-
     class Meta:
         verbose_name = '2.Service'
         verbose_name_plural = '2.Services`'
-
-    def __str__(self):
-        return self.s_title
-        # return "%s" % self.code
-
-
     s_title =     models.CharField(' Service title',max_length=128)
     s_shortdesc = models.TextField(' Service short description')
     s_desc =      models.TextField(' Service full description')
     mp_icon = models.ImageField('Icon for Mainpage')
     sp_icon = models.FileField('Icon for Service page')
-
+    def __str__(self):
+        return self.s_title
     def get_prev_icon(self):
         return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.mp_icon.url))
 
