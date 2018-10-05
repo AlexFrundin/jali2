@@ -294,7 +294,22 @@ font-size: 1rem;
   font-size: 0.8rem;
   }
 }
-
+@media screen and (max-width: 321px) {
+  .first{
+    margin-left: 17%;
+     font-size: 1.5rem;
+  }
+     .second{
+       margin-right: 45%;
+       font-size: 0.9rem;
+            }
+  .third{
+    /* text-align: left  !important; */
+    margin-right: 0%;
+  padding-right: 89%;
+  font-size: 0.6rem;
+  }
+}
 #home .text-arabic{
   padding-top: 1em;
   display: flex;
