@@ -296,7 +296,7 @@ font-size: 1rem;
 }
 @media screen and (max-width: 321px) {
   .first{
-    margin-left: 17%;
+    margin-left: 12%;
      font-size: 1.5rem;
   }
      .second{
