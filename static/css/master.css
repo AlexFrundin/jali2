@@ -154,7 +154,7 @@ ul.contact_main li i {
   margin-bottom: 10%;
   margin-top:10%;
 }
-.first{
+/* .first{
   margin-left: 8%;
    font-size: 1.5rem;
 }
@@ -163,20 +163,19 @@ ul.contact_main li i {
      font-size: 0.9rem;
           }
 .third{
-  /* text-align: left  !important; */
+
   margin-right: 0%;
 padding-right: 89%;
 font-size: 0.6rem;
 }
-}
+} */
 
 /* блок для IOS */
 /* Landscape  6*/
 @media only screen
-    and (min-device-width : 375px) // or 213.4375em or 3in or 9cm
-    and (max-device-width : 667px) // or 41.6875em
-    and (width : 667px) // or 41.6875em
-    and (height : 375px) // or 23.4375em
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (height : 375px)
     and (orientation : landscape)
     and (color : 8)
     and (device-aspect-ratio : 375/667)
@@ -201,10 +200,10 @@ font-size: 0.6rem;
 }
 /* Portrait 6*/
 @media only screen
-    and (min-device-width : 375px) // or 213.4375em
-    and (max-device-width : 667px) // or 41.6875em
-    and (width : 375px) // or 23.4375em
-    and (height : 559px) // or 34.9375em
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (width : 375px)
+    and (height : 559px) 
     and (orientation : portrait)
     and (color : 8)
     and (device-aspect-ratio : 375/667)
