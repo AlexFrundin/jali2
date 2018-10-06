@@ -252,6 +252,9 @@ font-size: 0.6rem;
 }
 
 @media screen and (max-width: 769px) {
+  #home .slider{
+    background-image: url(../img/mobile-banner.png) !important;
+  }
   .first{
     margin-left: 8%;
      font-size: 1.8rem;
