@@ -287,7 +287,16 @@ font-size: 0.6rem;
 }
 
 @media screen and (max-width: 416px) {
+  #copy{
+    position: relative;
+    bottom: 0;
+  }
+  #accordion{
+    position: relative;
+    top:100px;
+  }
   .first{
+
     /* было 11% */
     margin-left: 8%;
     /* 1.8 */
@@ -679,7 +688,7 @@ footer h5 {
 
 @media screen and (max-width: 480px) {
 footer{
-  background-image: url(../img/footer_p.png) no-repeat;
+  background-image: url(../img/footer-bg.png) no-repeat;
   background-position:center;
   background-size:cover;
   height: 800px;
