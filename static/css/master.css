@@ -203,7 +203,7 @@ font-size: 0.6rem;
     and (min-device-width : 375px)
     and (max-device-width : 667px)
     and (width : 375px)
-    and (height : 559px) 
+    and (height : 559px)
     and (orientation : portrait)
     and (color : 8)
     and (device-aspect-ratio : 375/667)
@@ -430,10 +430,12 @@ font-size: 0.6rem;
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 416px) {
   .first{
-    margin-left: 11%;
-     font-size: 1.8rem;
+    /* было 11% */
+    margin-left: 8%;
+    /* 1.8 */
+     font-size: 1.5rem;
   }
      .second{
        margin-right: 45%;
