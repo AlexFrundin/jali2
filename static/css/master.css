@@ -154,18 +154,21 @@ ul.contact_main li i {
   margin-bottom: 10%;
   margin-top:10%;
 }
-/* .first{
- margin-right:0.4em;
- font-size: 2rem;
+.first{
+  margin-left: 8%;
+   font-size: 1.5rem;
 }
-.second{
-margin-right: 45%;
-font-size: 1rem;
-}
+   .second{
+     margin-right: 45%;
+     font-size: 0.9rem;
+          }
 .third{
-  margin-right: 11%;
-  font-size: 0.8rem;
-} */
+  /* text-align: left  !important; */
+  margin-right: 0%;
+padding-right: 89%;
+font-size: 0.6rem;
+}
+}
 
 /* блок для IOS */
 /* Landscape  6*/
