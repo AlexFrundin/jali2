@@ -303,7 +303,7 @@ font-size: 0.6rem;
     /* было 11% */
     margin-left: 8%;
     /* 1.8 */
-     font-size: 1.5rem;
+     font-size: 1.4rem;
   }
      .second{
        margin-right: 45%;
@@ -319,7 +319,7 @@ font-size: 0.6rem;
 @media screen and (max-width: 321px) {
   .first{
     margin-left: 8%;
-     font-size: 1.5rem;
+     font-size: 1.4rem;
   }
      .second{
        margin-right: 45%;
@@ -332,6 +332,8 @@ font-size: 0.6rem;
   font-size: 0.6rem;
   }
 }
+
+
 #home .text-arabic{
   padding-top: 1em;
   display: flex;
@@ -741,11 +743,11 @@ footer .address{
     font-size: 28px;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     #accordion:before {
         width: 50%;
     }
-}
+} */
 /* @media (max-width: 992px) {
     fototer{
       background-position: center;
