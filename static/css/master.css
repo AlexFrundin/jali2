@@ -200,7 +200,7 @@ font-size: 0.6rem;
   font-size: 1rem;
   }
   .third{
-    margin-right: 52%;
+    margin-right: 66%;
     font-size: 0.8rem;
   }
    }
@@ -215,25 +215,27 @@ font-size: 0.6rem;
      font-size: 1rem;
      }
      .third{
-       margin-right: 80%;
+       margin-right: 85%;
        font-size: 0.8rem;
      }
       }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
   .first{
    margin-right:23%;
    font-size: 2rem;
   }
   .second{
-  margin-right: 40%;
+  margin-right: 43%;
   font-size: 1rem;
   }
   .third{
-    margin-right: 99%;
+    margin-left: -10%;
+    padding-right: 7%;
     font-size: 0.8rem;
   }
    }
+
 @media screen and (max-width: 813px) {
   .first{
     margin-left: 7%;
@@ -245,8 +247,8 @@ font-size: 0.6rem;
             }
   .third{
     /* text-align: left  !important; */
-    margin-right: 88%;
-    padding-right: 100%;
+    margin-right: 40%;
+    padding-right: 50%;
     font-size: 0.8rem;
   }
 }
@@ -266,9 +268,9 @@ font-size: 0.6rem;
             }
   .third{
     /* text-align: left  !important; */
-    margin-right: 0%;
-  padding-right: 71%;
-  font-size: 0.8rem;
+    margin-right: 40%;
+    padding-right: 50%;
+    font-size: 0.8rem;
   }
 }
 
@@ -284,7 +286,7 @@ font-size: 0.6rem;
             }
   .third{
     /* text-align: left  !important; */
-    margin-right: 0%;
+    margin-right: 10%;
   padding-right: 79%;
   font-size: 0.8rem;
   }
@@ -516,8 +518,8 @@ h1.title.line{
 .page-title h2 {
     color: #3a3c41;
     line-height: 33px;
-	max-height:66px;
-	overflow:hidden;
+	  max-height:66px;
+	  overflow:hidden;
     margin: 0;
 }
 #home .menu{
@@ -628,7 +630,7 @@ h1.title.line{
     content: '';
     position: fixed;
     background-image: url(../img/form-bg.jpg);
-    background-position: bottom;
+    background-position: bottom top;
     background-size: cover;
     z-index:-2;
     height: 100%;
