@@ -296,11 +296,11 @@ font-size: 0.6rem;
   /* #copy{
     position: relative;
     bottom: 0;
-  }
+  }*/
   #accordion{
     position: relative;
     top:100px;
-  } */
+  }
 
   #accordion:after{
       content: '';
