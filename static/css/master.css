@@ -237,6 +237,7 @@ h1.title.line{
     background: transparent;
 }
 .btn-home{
+  font-family: Arabic;
     background: transparent;
     border: 2px solid #C9A779;
     color: #C9A779;
