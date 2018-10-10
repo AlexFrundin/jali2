@@ -175,6 +175,7 @@ class News(models.Model):
     class Meta:
         verbose_name = '4.News'
         verbose_name_plural = '4.News'
+        ordering = ['order_sort']
 
     def __str__(self):
         return self.title
