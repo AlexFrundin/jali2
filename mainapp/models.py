@@ -186,6 +186,7 @@ class News(models.Model):
     full_desc = models.TextField('Short description')
     image = models.ImageField('News image')
     on_main_page = models.BooleanField("On main page?", default=False)
+    order_sort = models.IntegerField("Number page", default=1)
 
     def get_prev(self):
         return mark_safe('<img src="{}" width="30" height="30" class="image"/>'.format(self.image.url))
