@@ -12,7 +12,7 @@ class ConsultationAdmin(admin.ModelAdmin):
 class NewsAdmin(admin.ModelAdmin):
     list_display = ('title', 'date', 'on_main_page', 'get_prev')
     list_display_links = ('title',)
-    list_editable = ('on_main_page',)
+    list_editable = ('on_main_page','order_sort')
 
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
