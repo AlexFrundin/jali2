@@ -236,6 +236,17 @@ h1.title.line{
     border-bottom: 1px solid rgba(255,255,255,0.5);
     background: transparent;
 }
+
+#news-all .card{
+  max-height:400px;
+
+}
+#news-all p.card_text{
+  height:4rem;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+}
+
 .btn-home{
   font-family: Arabic;
     background: transparent;
@@ -493,10 +504,7 @@ h1.title.line{
     font-size: 14px;
 }
 
-.card_size{
-  display: flex;
-align-items: stretch;
-}
+
 
 footer{
 
