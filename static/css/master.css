@@ -395,6 +395,7 @@ h1.title.line{
     font-size: 19px;
 }
 
+
 #form{
     background-image: url(../img/33.jpg);
     background-position: center;
@@ -455,9 +456,9 @@ h1.title.line{
     font-size: 25px;
     color: #D1AA77;
 }
-#feedback-blog .blogs img{
+/* #feedback-blog .blogs img{
     border: 5px solid #333;
-}
+} */
 #feedback-blog .blogs .date{
     text-transform: uppercase;
     color: #aaa;
