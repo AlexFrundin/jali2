@@ -184,7 +184,7 @@ class News(models.Model):
     title = models.CharField('News title', max_length=128)
     date = models.DateField(auto_now=True)
     short_desc = models.TextField('Short description')
-    full_desc = models.TextField('Short description')
+    full_desc = models.TextField('Full description')
     image = models.ImageField('News image')
     on_main_page = models.BooleanField("On main page?", default=False)
     order_sort = models.IntegerField("Number page", default=1)
