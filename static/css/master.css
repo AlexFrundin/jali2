@@ -358,6 +358,8 @@ h1.title.line{
 #home .slider .reports{
     background: rgb(255,255,255,0.4);
     position: relative;
+    color:#fff;
+
 }
 #home .slider .reports .report:after{
     position: absolute;
