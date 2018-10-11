@@ -24,19 +24,18 @@
 <div class="container">
     <div class="row">
          <div class="col-sm-12 col-md-9 col-lg-9">
-             <div class="uslugi-main">
+             <div class="service-main">
                  <img src="{{ service.mp_icon.url }}">
                  <h1>{{ service.s_title }}</h1>
                   <p>{{ service.s_desc }}</p>
              </div>
-         </div>
+         </div class="service-li">
          <div class="col-sm-12 col-md-3 col-lg-3" style="text-align: right; margin-top: 100px;">
 
              <ul>
-                 </li>
                  {% for i in all %}
-                 <li><a href="/service/{{ i.id }}">{{ i.s_title }} </a>
-                 <img src="{{ i.mp_icon.url }}" width="20px" class="ml-2">
+                 <li><a href="/service/{{ i.id }}"><span style="vertical-align: sub;">{{ i.s_title }}</span> </a>
+                 <img src="{{ i.mp_icon.url }}" width="20px" class="ml-2 ">
                  <hr>
                  </li>
                  {% endfor %}
@@ -61,31 +60,31 @@
 
     background-image: url('/wp-content/uslugi-bg.jpg');
 }
-.uslug-bg li {
+.service-li li {
 list-style-type: none; /* Убираем маркеры */
 border-bottom: 1px solid #d0a13e;
-
-padding-bottom: 8px;
 }
-
+/* .service-li li a span{
+margin-bottom:-10px;
+} */
 .uslug-bg ul{
     border:0; padding:0; text-align: right;margin-top: 250px;
 }
 .uslug-bg li a{
-        font-size: 18px;
+  font-size: 18px;
 }
 
-.uslugi-main img{
-        text-align: center;
-margin-left: 45%;
-margin-top: 90px;
+.service-main img{
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 90px;
 }
 
-.uslugi-main h1{
+.service-main h1{
     text-align: center;
 }
 
-.uslugi-main p{
+.service-main p{
     text-align: right;
         font-size: 24px;
 }
