@@ -24,7 +24,7 @@
     <div class="row">
       {% for i in news %}
         <div class="mt-5 col-md-6 col-xl-4">
-          <div class="card mb-5">
+          <div class="card mb-5 pb-5">
               <p1>{{ i.date }}</p1>
               <h1>{{ i.title }}</h1>
             <div class="card-body">
@@ -35,7 +35,9 @@
             </div>
               <img class="card-img-bottom img-responsive" src="{{ i.image.url }}" alt="...">
           </div>
+          <br><br>
         </div>
+
       {% endfor %}
     </div>
   </div>
