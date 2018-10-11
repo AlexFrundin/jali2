@@ -1,3 +1,19 @@
+/* #accordion{
+  position: fixed;
+  top:100px;
+}
+#accordion:before {
+    width: 50%;
+} */
+/* #home .menu{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: -70px;
+  padding-bottom: 70px;
+  transform: translateY(70px);
+  } */
+
 /* блок для IOS */
 /* Landscape  6*/
 @media only screen

@@ -780,15 +780,6 @@ footer{
 }
 
 @media screen and (max-width: 416px) {
-
-  /* #accordion{
-    position: fixed;
-    top:100px;
-  }
-  #accordion:before {
-      width: 50%;
-  } */
-
   .first{
     /* было 11% */
     margin-right: 14%;
@@ -804,14 +795,7 @@ footer{
   padding-right: 81%;
   font-size: 0.8rem;
   }
-/* #home .menu{
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: -70px;
-  padding-bottom: 70px;
-  transform: translateY(70px);
-  } */
+
 }
 @media screen and (max-width: 321px) {
   .first{
