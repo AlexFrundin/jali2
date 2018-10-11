@@ -774,24 +774,24 @@ footer{
             }
   .third{
   margin-right: 10%;
-  padding-right: 79%;
+  padding-right: 59%;
   font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 416px) {
 
-  #accordion{
-    position: relative;
+  /* #accordion{
+    position: fixed;
     top:100px;
   }
   #accordion:before {
       width: 50%;
-  }
+  } */
 
   .first{
     /* было 11% */
-    margin-left: 8%;
+    margin-right: 14%;
     /* 1.8 */
      font-size: 1.4rem;
   }
@@ -801,17 +801,17 @@ footer{
         }
   .third{
   margin-right: 0%;
-  padding-right: 89%;
+  padding-right: 81%;
   font-size: 0.8rem;
   }
-#home .menu{
+/* #home .menu{
   left: 0;
   right: 0;
   bottom: 0;
   top: -70px;
   padding-bottom: 70px;
   transform: translateY(70px);
-  }
+  } */
 }
 @media screen and (max-width: 321px) {
   .first{
@@ -825,7 +825,7 @@ footer{
   .third{
     /* text-align: left  !important; */
     margin-right: 0%;
-  padding-right: 89%;
+  padding-right: 81%;
   font-size: 0.6rem;
   }
 }
