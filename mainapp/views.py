@@ -57,32 +57,7 @@ def page(request, link):
     args['news'] = Page.objects.get(link=link)
     return render(request, "page.html", args)
 
-# def addconsultation(request):
-#     name = request.POST.get('Your-name')
-#     phone = request.POST.get('Phone')
-#     category = request.POST.get('Dropdown')
-#     msg =  request.POST.get('Your-message')
-#     gg = Consultation(name=name, phone = phone, category = category, text = msg)
-#     gg.save()
-#     args = {}
-#     args['id'] = gg.id
-#     paypal_dict = {
-#         "business": "aleksey.frundin@gmail.com",
-#         "amount": "69",
-#         "item_name": "Consultations",
-#         "invoice": f"{args['id']}",
-#         "notify_url": "http://206.189.222.174:12453" + reverse('paypal-ipn'),
-#         "return_url": "http://206.189.222.174:12453",
-#         "cancel_return": "http://206.189.222.174:12453",
-#         "custom": args['id'],
-#     }
-#     # Create the instance.
-#     form = PayPalPaymentsForm(initial=paypal_dict)
-#     args["form"]= form
-#     return render(request,'pay.html', args)
-
 def list(request):
-    #if request.user.is_admin == False:
     gg = PayPalIPN.objects.all()
     arr =[]
     for i in gg:
@@ -96,8 +71,7 @@ def list(request):
     args = {}
     args['data'] = arr
     return render(request, 'list.html', args)
-    # else:
-    #     redirect('/admin')
+    
 def copy(request):
     args = {}
     return render(request, "mainpage2.html", args)

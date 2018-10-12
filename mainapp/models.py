@@ -44,7 +44,6 @@ class MpHead(models.Model):
 
     def __str__(self):
         return "Header vallue"
-        # return "%s" % self.code
 
     tytle_1 = models.CharField('First element title',max_length=128)
     vallue1 = models.CharField('First element vallue',max_length=128)
@@ -67,7 +66,6 @@ class Ticker(models.Model):
 
     def __str__(self):
         return self.ticker_text
-        # return "%s" % self.code
 
     ticker_text = models.TextField("Ticker text")
 
@@ -100,7 +98,6 @@ class Services_section(models.Model):
 
     def __str__(self):
         return "Change services section title"
-        # return "%s" % self.code
 
     f_title = models.CharField(' Main page< first service title', max_length=128)
     s_title = models.CharField(' Main page< second service title', max_length=128)
@@ -127,7 +124,6 @@ class Scroll_menu_text(models.Model):
 
     def __str__(self):
         return self.s_name
-        # return "%s" % self.code
 
     s_name = models.CharField('Name of the item', max_length=128)
     s_text = models.TextField('Text')
@@ -141,7 +137,6 @@ class Review(models.Model):
 
     def __str__(self):
         return self.title
-        # return "%s" % self.code
 
     title = models.CharField('Review title', max_length=128)
     text_1 = models.TextField('Text 1')
@@ -163,7 +158,6 @@ class Bottom_footer(models.Model):
 
     def __str__(self):
         return "Bottom footer items"
-        # return "%s" % self.code
 
     item_1 = models.CharField('#1 item', max_length=128)
     item_2 = models.CharField('#2 item', max_length=128)
@@ -179,7 +173,6 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
-        # return "%s" % self.code
 
     title = models.CharField('News title', max_length=128)
     date = models.DateField(auto_now=True)
@@ -203,7 +196,6 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
-        # return "%s" % self.code
 
     title = models.CharField('News title', max_length=128)
     link = models.CharField('Link name', max_length=128)
@@ -218,7 +210,6 @@ class Slider2(models.Model):
 
     def __str__(self):
         return self.title
-        # return "%s" % self.code
 
     title = models.CharField('News title', max_length=128)
     url = models.CharField('Link address', max_length=128)
