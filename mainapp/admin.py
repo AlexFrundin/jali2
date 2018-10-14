@@ -30,11 +30,16 @@ class ConsultationOrderAdmin(admin.ModelAdmin):
     list_display_links = ('s_name',)
     list_editable = ('price',)
 
+
+@admin.register(Page)
+class PageAdmin(admin.ModelAdmin):
+    list_display = ('title', 'link')
+
+
 admin.site.register(MpHeadBlock1)
 admin.site.register(MpHead)
 admin.site.register(Ticker)
 admin.site.register(Services_section)
 admin.site.register(Scroll_menu_text)
 admin.site.register(Bottom_footer)
-admin.site.register(Page)
 admin.site.register(Slider2)
