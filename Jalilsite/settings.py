@@ -96,5 +96,5 @@ MEDIA_DIRS = (
 
 #paypall
 #...
-PAYPAL_RECEIVER_EMAIL = 'aleksey.frundin-facilitator@gmail.com'
-PAYPAL_TEST = True
+PAYPAL_RECEIVER_EMAIL = 'jalilalkhalidi@gmail.com'
+PAYPAL_TEST = False
