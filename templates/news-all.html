@@ -24,12 +24,12 @@
     <div class="row">
       {% for i in news %}
         <div class="mt-5 col-md-6 col-xl-4">
-          <div class="card mb-5 pb-5">
-              <p1>{{ i.date }}</p1>
+          <div class="card mb-5 pb-5" >
+              <p1 class="text-right">{{ i.date }}</p1>
               <h1 class="text-right">{{ i.title }}</h1>
             <div class="card-body">
-              <p class="card_text">{{ i.short_desc }}</p>
-              <button type="button" class="btn btn-news" onClick='location.href="/news/{{ i.id }}"'>
+              <p class="card_text text-justify" style="direction:rtl;">{{ i.short_desc }}</p>
+              <button type="button" class="btn btn-news pull-right" onClick='location.href="/news/{{ i.id }}"'>
               شاهد أكثر
               </button>
             </div>

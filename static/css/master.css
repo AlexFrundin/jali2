@@ -45,8 +45,8 @@ body{
   width: 125px;
   position: absolute;
   bottom: 0px;
-  left: 0px;
-  right: auto;
+  left: auto;
+  right: 0;
   background: #eeeeee;
 }
 .contact_side h5 span span.in_bg {
@@ -54,10 +54,11 @@ body{
   width: 27px;
   position: absolute;
   bottom: 0px;
-  left: 0px;
-  right: auto;
+  left: auto;
+  right: 0px;
   background:#585858;
 }
+
 .contact_side ul.contact_main {
   margin: 0px;
   padding: 0px;
